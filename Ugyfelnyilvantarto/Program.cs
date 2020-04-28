@@ -21,6 +21,7 @@ namespace Ugyfelnyilvantarto
         public static List<Kollega> kollegak = new List<Kollega>();
         public static List<Nyelv> nyelvek = new List<Nyelv>();
         public static Munka kiv_munka = new Munka();
+
         static void Main()
         {
             MySqlBaseConnectionStringBuilder sb = new MySqlConnectionStringBuilder();
