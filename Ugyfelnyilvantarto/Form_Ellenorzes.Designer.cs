@@ -36,6 +36,8 @@
             this.ToolStripMenuItem_kollega = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_fooldalra = new System.Windows.Forms.ToolStripMenuItem();
             this.DG_Ellenorzes = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DG_Ellenorzes)).BeginInit();
             this.SuspendLayout();
@@ -43,7 +45,7 @@
             // textBox_ugyfel
             // 
             this.textBox_ugyfel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_ugyfel.Location = new System.Drawing.Point(718, 39);
+            this.textBox_ugyfel.Location = new System.Drawing.Point(362, 39);
             this.textBox_ugyfel.Name = "textBox_ugyfel";
             this.textBox_ugyfel.Size = new System.Drawing.Size(175, 24);
             this.textBox_ugyfel.TabIndex = 14;
@@ -62,7 +64,7 @@
             // textBox_kollega
             // 
             this.textBox_kollega.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_kollega.Location = new System.Drawing.Point(359, 39);
+            this.textBox_kollega.Location = new System.Drawing.Point(723, 39);
             this.textBox_kollega.Name = "textBox_kollega";
             this.textBox_kollega.Size = new System.Drawing.Size(175, 24);
             this.textBox_kollega.TabIndex = 12;
@@ -109,11 +111,33 @@
             this.DG_Ellenorzes.Size = new System.Drawing.Size(1230, 359);
             this.DG_Ellenorzes.TabIndex = 16;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(310, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 18);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "ügyfél";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(904, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 18);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "kolléga";
+            // 
             // Form_Ellenorzes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1254, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.DG_Ellenorzes);
             this.Controls.Add(this.textBox_ugyfel);
             this.Controls.Add(this.button_ellenorzes);
@@ -141,5 +165,7 @@
         private System.Windows.Forms.DataGridView DG_Ellenorzes;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_kollega;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_fooldalra;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

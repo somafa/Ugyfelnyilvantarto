@@ -107,6 +107,7 @@
             this.button_modositas.TabIndex = 1;
             this.button_modositas.Text = "Módosítás";
             this.button_modositas.UseVisualStyleBackColor = true;
+            this.button_modositas.Click += new System.EventHandler(this.button_modositas_Click);
             // 
             // button_mentes
             // 

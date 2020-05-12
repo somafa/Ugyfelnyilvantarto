@@ -27,10 +27,10 @@ namespace Ugyfelnyilvantarto
 
         private void Form_Kollega_Load(object sender, EventArgs e)
         {
-            Ugyfel_Kollega_beallitasai();
-            Ugyfel_Kollega_feltoltese();
+            Kollega_Grid_beallitasai();
+            Kollega_Grid_feltoltese();
         }
-        private void Ugyfel_Kollega_beallitasai()
+        private void Kollega_Grid_beallitasai()
         {
             DG_Kollega.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             DG_Kollega.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
@@ -163,7 +163,7 @@ namespace Ugyfelnyilvantarto
             }
             DG_Kollega.Columns.Insert(13, col_megj);
         }
-        private void Ugyfel_Kollega_feltoltese()
+        private void Kollega_Grid_feltoltese()
         {
             DG_Kollega.Rows.Clear();
 
@@ -240,7 +240,7 @@ namespace Ugyfelnyilvantarto
             }
             else if (string.IsNullOrEmpty(textBox_kollega_kereses.Text) && string.IsNullOrEmpty(textBox_nyelvkereses.Text))
             {
-                Ugyfel_Kollega_feltoltese();
+                Kollega_Grid_feltoltese();
             }
         }
     }

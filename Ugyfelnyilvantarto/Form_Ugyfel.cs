@@ -21,6 +21,7 @@ namespace Ugyfelnyilvantarto
         {
             DG_Ugyfel.Rows.Clear();
             DG_Ugyfel.Columns.Clear();
+            textBox_ugyfel_kereses.Clear();
             this.Close();
             Program.form_Fooldal.Show();
         }

@@ -40,6 +40,8 @@
             this.textBox_kollega_kereses = new System.Windows.Forms.TextBox();
             this.textBox_nyelvkereses = new System.Windows.Forms.TextBox();
             this.DG_Kollega = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DG_kollega_kivalasztott)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DG_Kollega)).BeginInit();
@@ -156,11 +158,33 @@
             this.DG_Kollega.Size = new System.Drawing.Size(1230, 455);
             this.DG_Kollega.TabIndex = 12;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(265, 166);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 18);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "név, tel, mail";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(900, 166);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 18);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "nyelvek";
+            // 
             // Form_Kollega
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1254, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.DG_Kollega);
             this.Controls.Add(this.textBox_nyelvkereses);
             this.Controls.Add(this.button_kereses);
@@ -199,5 +223,7 @@
         private System.Windows.Forms.TextBox textBox_kollega_kereses;
         private System.Windows.Forms.TextBox textBox_nyelvkereses;
         private System.Windows.Forms.DataGridView DG_Kollega;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

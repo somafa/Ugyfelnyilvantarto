@@ -37,9 +37,9 @@ namespace Ugyfelnyilvantarto
 
         private void Form_Nyelvek_Load(object sender, EventArgs e)
         {
-            Lista_feltoltese();
+            Nyelv_Lista_feltoltese();
         }
-        private void Lista_feltoltese()
+        private void Nyelv_Lista_feltoltese()
         {
             foreach (Nyelv item in Program.nyelvek)
             {

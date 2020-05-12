@@ -39,6 +39,7 @@
             this.DG_Ugyfel = new System.Windows.Forms.DataGridView();
             this.textBox_ugyfel_kereses = new System.Windows.Forms.TextBox();
             this.button_kereses = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DG_ugyfel_kivalasztott)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DG_Ugyfel)).BeginInit();
@@ -147,11 +148,22 @@
             this.button_kereses.UseVisualStyleBackColor = true;
             this.button_kereses.Click += new System.EventHandler(this.button_kereses_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(367, 166);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 18);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "név, tel, mail";
+            // 
             // Form_Ugyfel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1254, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button_kereses);
             this.Controls.Add(this.textBox_ugyfel_kereses);
             this.Controls.Add(this.DG_Ugyfel);
@@ -188,5 +200,6 @@
         private System.Windows.Forms.DataGridView DG_Ugyfel;
         private System.Windows.Forms.TextBox textBox_ugyfel_kereses;
         private System.Windows.Forms.Button button_kereses;
+        private System.Windows.Forms.Label label1;
     }
 }
